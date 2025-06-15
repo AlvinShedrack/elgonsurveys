@@ -84,34 +84,31 @@
 .menu-icon{
   display: none;
 }
-
 @media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    margin-top: 7px;
+    cursor: pointer;
+    margin-left: 240px;
+    color: white;
+    font-size: 24px;
+  }
+
   .navbar {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 16px;
   }
 
   .navbar img {
-    width: 40px;
-    height: 40px;
-    margin: 0;
+    margin-left: 10px;
+    width: 6%;
+    height: 6%;
   }
 
   .logolink {
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: -10px;
   }
 
-  .menu-icon {
-    display: block;
-    font-size: 26px;
-    margin: 0;
-    color: white;
-    cursor: pointer;
-  }
-}
 
 
 @media (max-width: 800px) {
