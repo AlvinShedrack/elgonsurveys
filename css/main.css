@@ -34,7 +34,7 @@ body {
   padding: 8px 12px;
 }
 
-.navlist {
+.navList {
   background-color: #0a6e28 !important; /* Purple */
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ body {
   z-index: 1000;
 }
 
-.nav {
+.list {
   background-color: #0a6e28 !important; /* Purple */
   display: flex;
   align-items: center;
