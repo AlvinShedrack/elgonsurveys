@@ -37,7 +37,7 @@ body {
 .navList {
   background-color: #0a6e28 !important; /* Purple */
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   padding: 1em;
   position: absolute;
