@@ -119,14 +119,19 @@
   }
 
   .list.active {
-    position: absolute;
-    background-color:#114d94a2;
-    display: block;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 100vw;
-    height: 100vh;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(17, 77, 148, 0.97); /* Slight transparency */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 80px; /* Push content down below navbar */
+}
+
 
   .list.active ul {
     list-style: none; 
