@@ -91,10 +91,11 @@
     }
 
     .team-grid {
-      display: flex;
-      flex-wrap: wrap;
+      
+     
       gap: 10px;
-      justify-content: right;
+      justify-content: center;
+      align-items: center;
     }
 
     .team-card {
@@ -105,16 +106,23 @@
       text-align: center;
       padding: 10px;
       justify-content: center;
+      cursor: pointer;
     }
 
     .team-card img {
       width: 120px;
       height: 120px;
-      border-radius: 50%;
+      border-radius: 40%;
       object-fit: cover;
       margin-bottom: 15px;
+      cursor: pointer;
+      object-fit: fill;
+     
     }
 
+    .team-card:hover img {
+      transform: scale(1.25);
+    }
     .team-card h3 {
       margin-bottom: 5px;
       color: #4B0082;
@@ -144,84 +152,83 @@
     <h2 style="background-color: #1a974a;"> Surveyors</h2>
   </section>
   <div class="team-grid three-columns">
-    <div class="team-card">
-      <img src="assets/img/MZ.jpeg" alt="Mr. Wanasolo James">
-      <h3>Mr. Wanasolo James</h3>
-      <p style="color: rgb(250, 15, 15); max-width: 510px; font-weight: 700; font-size: 20px;">Managing Director</p>
-      
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BWAYO.jpg" alt="Mr. Bwayo Patrick">
-      <h3>Mr. Bwayo Patrick</h3>
-      <p style="color: rgb(250, 15, 15); max-width: 510px; font-weight: 700; font-size: 20px;">Managing Director</p>
-   
-    </div>
-    <div class="team-card">
-      <img src="assets/img/ME.jpeg" alt="Mr. Wogisha Alvin Shedrack">
-      <h3>Mr. Wogisha Alvin Shedrack</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/DINAH.jpeg" alt="Ms. Nakhumitsa Dinah Mayatsa">
-      <h3>Ms. Nakhumitsa Dinah Mayatsa</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Wosheba Godfrey">
-      <h3>Mr. Wosheba Godfrey</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Nalela Emma">
-      <h3>Mr. Kuloba Chris Han</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/TRACY.jpeg" alt="Ms. Kharono Tracy Charlotte">
-      <h3>Ms. Kharono Tracy Charlotte</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Nalela Emma">
-      <h3>Mr. Nalela Emma</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/GIRESOM.jpeg" alt="Mr. Wabuyu Giresom">
-      <h3>Mr. Wabuyu Giresom</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Wodero Mathias">
-      <h3>Mr. Wodero Mathias</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Ms. Peace Elizabeth">
-      <h3>Ms. Peace Elizabeth</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Bwayo Collins">
-      <h3>Mr. Bwayo Collins</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Ms. Peace Elizabeth">
-      <h3>Ms. Redempta Seela</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/JAMES.jpeg" alt="Mr. James Netonge Wamema">
-      <h3>Mr. James Netonge Wamema</h3>
-      <p>Surveyor</p>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Nalela Emma">
-      <h3>Mr. Kuloba Aaron</h3>
-      <p>Surveyor</p>
-    </div>
+  <div class="team-card">
+    <img src="assets/img/MZ.jpeg" alt="Mr. Wanasolo James" onclick="openModal(this.src)">
+    <h3>Mr. Wanasolo James</h3>
+    <p style="color: rgb(250, 15, 15); max-width: 510px; font-weight: 700; font-size: 20px;">Managing Director</p>
   </div>
+  <div class="team-card">
+    <img src="assets/img/BWAYO.jpg" alt="Mr. Bwayo Patrick" onclick="openModal(this.src)">
+    <h3>Mr. Bwayo Patrick</h3>
+    <p style="color: rgb(250, 15, 15); max-width: 510px; font-weight: 700; font-size: 20px;">Managing Director</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/ME.jpeg" alt="Mr. Wogisha Alvin Shedrack" onclick="openModal(this.src)">
+    <h3>Mr. Wogisha Alvin Shedrack</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/DINAH.jpeg" alt="Ms. Nakhumitsa Dinah Mayatsa" onclick="openModal(this.src)">
+    <h3>Ms. Nakhumitsa Dinah Mayatsa</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Wosheba Godfrey" onclick="openModal(this.src)">
+    <h3>Mr. Wosheba Godfrey</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Kuloba Chris Han" onclick="openModal(this.src)">
+    <h3>Mr. Kuloba Chris Han</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/TRACY.jpeg" alt="Ms. Kharono Tracy Charlotte" onclick="openModal(this.src)">
+    <h3>Ms. Kharono Tracy Charlotte</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Nalela Emma" onclick="openModal(this.src)">
+    <h3>Mr. Nalela Emma</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/GIRESOM.jpeg" alt="Mr. Wabuyu Giresom" onclick="openModal(this.src)">
+    <h3>Mr. Wabuyu Giresom</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Wodero Mathias" onclick="openModal(this.src)">
+    <h3>Mr. Wodero Mathias</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Ms. Peace Elizabeth" onclick="openModal(this.src)">
+    <h3>Ms. Peace Elizabeth</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Bwayo Collins" onclick="openModal(this.src)">
+    <h3>Mr. Bwayo Collins</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Ms. Redempta Seela" onclick="openModal(this.src)">
+    <h3>Ms. Redempta Seela</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/JAMES.jpeg" alt="Mr. James Netonge Wamema" onclick="openModal(this.src)">
+    <h3>Mr. James Netonge Wamema</h3>
+    <p>Surveyor</p>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Mr. Kuloba Aaron" onclick="openModal(this.src)">
+    <h3>Mr. Kuloba Aaron</h3>
+    <p>Surveyor</p>
+  </div>
+</div>
+
    <section class="services">
       <h2> </h2>
     </section>
@@ -229,19 +236,19 @@
       <h2 style="background-color: #97651a;"> Engineers and Architects</h2>
   </section>
   <div class="team-grid three-columns">
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Wosheba Godfrey">
-      <h3>Eng. Fazisi Kenneth</h3>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Wosheba Godfrey">
-      <h3>Eng. Mafabi Erasmus</h3>
-    </div>
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Mr. Wosheba Godfrey">
-      <h3>Eng. Mafabi Isreal</h3>
-    </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Eng. Fazisi Kenneth" onclick="openModal(this.src)">
+    <h3>Eng. Fazisi Kenneth</h3>
   </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Eng. Mafabi Erasmus" onclick="openModal(this.src)">
+    <h3>Eng. Mafabi Erasmus</h3>
+  </div>
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Eng. Mafabi Isreal" onclick="openModal(this.src)">
+    <h3>Eng. Mafabi Isreal</h3>
+  </div>
+</div>
     <section class="services">
       <h2> </h2>
     </section>
@@ -249,13 +256,67 @@
       <h2 style="background-color: #1f5e5a;"> Physical planners</h2>
   </section>
   <div class="team-grid one-column">
-    <div class="team-card">
-      <img src="assets/img/BLANK.jpeg" alt="Ms. Achom Esther Ruth">
-      <h3>Ms. Achom Esther Ruth</h3>
-    </div>
-    
+  <div class="team-card">
+    <img src="assets/img/BLANK.jpeg" alt="Ms. Achom Esther Ruth" onclick="openModal(this.src)">
+    <h3>Ms. Achom Esther Ruth</h3>
   </div>
+</div>
+    
+
 </section>
+<!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" src="" alt="Expanded Image">
+</div>
+
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #fff;
+    margin: auto;
+    display: block;
+  }
+
+  .modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  function openModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex";
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
 
 <!-- Footer -->
  <style>
@@ -290,7 +351,7 @@
                     <div class="col-md-3">
                         <div>
                             <a>Our Story</a>
-                            <a>Why DC48K</a>
+                            <a>Why EUSE</a>
                             <a>Contacts</a>
                         </div>
                     </div>
