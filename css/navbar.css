@@ -120,8 +120,8 @@
 
 .list.active {
   position: fixed;
-  top: 10;
-  left: 10;
+  top: 0;
+  left: 90;
   z-index: 9999;
   background-color: rgba(17, 77, 148, 0.97); /* Slight transparency */
   width: 100vw;
