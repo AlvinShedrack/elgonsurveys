@@ -100,18 +100,20 @@
     align-items: center;
     padding: 10px;
     flex-direction: row;
-    justify-content: space-between;
+  
   }
 
   .navbar img {
     margin: 0;
     width: 35px;
     height: 45px;
+    align-items: center;
   }
 
   .logolink {
     margin-right: 10px;
     font-size: 20px;
+    align-items: center;
   }
 
   .list {
