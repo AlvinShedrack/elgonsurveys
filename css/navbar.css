@@ -10,7 +10,7 @@
 
 .navbar img{
 
-  width: 50%;
+  width: 8%;
   height:1%;
   align-items: center;
 }
@@ -28,6 +28,7 @@
 .list {
   margin-right: 4px;
   padding: 0.4rem;
+  
 }
 
 .logolink {
@@ -43,7 +44,8 @@
 .navList {
   list-style: none;
   display: flex;
-  margin-top: 1px;
+  margin-top: 2px;
+  
 }
 
 .navLin {
@@ -55,6 +57,7 @@
   padding: 0.4rem 0.8rem;
   transition: color 0.3s ease;
   position: relative; 
+  font-size: 20px;
 }
 
 .navLin:hover {
