@@ -47,18 +47,7 @@ body {
   z-index: 1000;
 }
 
-.list {
-  background-color: #0a6e28 !important; /* Purple */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
+
 .logo-text {
   color: #9be426 !important;
   font-size: 3rem !important;
