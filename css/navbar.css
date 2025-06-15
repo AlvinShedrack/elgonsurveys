@@ -9,7 +9,7 @@
 }
 
 .navbar img{
-  
+  margin-left: 0px;
   width: 1%;
   height:1%;
   align-items: center;
@@ -127,7 +127,7 @@
   right: 0;
   z-index: 9999;
   background-color: rgba(17, 77, 148, 0.7); /* Slight transparency */
-  width: 60vw;
+  width: 50vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
