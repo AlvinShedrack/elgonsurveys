@@ -123,9 +123,9 @@
   top: 0;
   right: 0;
   z-index: 9999;
-  background-color: rgba(17, 77, 148, 0.97); /* Slight transparency */
+  background-color: rgba(17, 77, 148, 0.7); /* Slight transparency */
   width: 60vw;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
