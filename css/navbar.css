@@ -6,8 +6,6 @@
   width: 100%;
   background-color: #35bdbd;
   z-index: 1000;
- 
-
 }
 
 .navbar img{
@@ -15,14 +13,16 @@
   width: 1%;
   height:1%
 }
+
 /* .logos {
   padding: 0.1rem;
   font-weight: 900;
   font-size: 20px;
 } */
+
 .logolink:hover {
-            text-decoration: none; /* Remove underline on hover */
-        }
+  text-decoration: none; /* Remove underline on hover */
+}
 
 .list {
   margin-right: 4px;
@@ -38,17 +38,15 @@
   color: black;
   position: relative; 
 }
-  
+
 .navList {
   list-style: none;
-
   display: flex;
   margin-top: 1px;
 }
 
 .navLin {
   text-decoration: none;
-  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 550;
   font-size: 13.5px;
@@ -82,9 +80,11 @@
 .navLin.active {
   width: 270px;
 }
+
 .menu-icon{
   display: none;
 }
+
 @media (max-width: 600px) {
   .menu-icon {
     display: block;
@@ -93,21 +93,26 @@
     margin-left: 240px;
     color: white;
     font-size: 24px;
+  }
 
-    
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
   }
-    .navbar {
-    flex-direction: column; /* Change flex direction to column for small screens */
-    align-items: center; /* Align items to the center */
+
+  .navbar img {
+    margin: 0;
+    width: 35px;
+    height: 35px;
   }
-  .navbar img{
-  margin-left: 10px;
-  width: 6%;
-  height:6%
-}
+
   .logolink {
-  margin-left: -10px;
- }
+    margin-left: 10px;
+    font-size: 20px;
+  }
 
   .list {
     display: none; /* Hide navigation list by default on small screens */
@@ -119,50 +124,50 @@
     display: block;
     margin-top: 20px;
     margin-left: 20px;
-    width: 100vw; /* Set width to 100% of viewport width */
+    width: 100vw;
     height: 100vh;
-   
-  
-   
   }
-  
+
   .list.active ul {
     list-style: none; 
     display: inline-block;
     margin-left: 30px;
     padding: 10px;
-   
-    
   }
-  
+
   .list.active li {
     padding: 0.5rem 1rem;
-    margin-top: 14px; /* Add padding to list items */
+    margin-top: 14px;
   }
-  
+
   .list.active li:hover {
     background-color: #f0f0f0;
   }
 }
+
 @media (max-width: 800px) {
   .menu-icon {
-    /* display: block; */
     cursor: pointer;
-    font-size: 40px;
-    margin-left: 160px;
-    margin-top: -78px;
-   }
-    .navbar {
-    flex-direction: column; 
-    /* align-items: center; */
+    font-size: 30px;
+    margin-left: 10px;
   }
-  .navbar img{
-  margin-left: -200px;
-  margin-top: 40px;
-  width: 20%;
-  height:20%
-}
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar img {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+  }
+
   .logolink {
-  margin-left: 10px;
- }
-}  
+    margin-left: 10px;
+    font-size: 22px;
+  }
+}
