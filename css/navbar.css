@@ -84,6 +84,7 @@
 .menu-icon{
   display: none;
 }
+
 @media (max-width: 600px) {
   .menu-icon {
     display: block;
@@ -95,21 +96,58 @@
   }
 
   .navbar {
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .navbar img {
-    margin-left: 10px;
-    width: 6%;
-    height: 6%;
+    margin: 0;
+    width: 35px;
+    height: 35px;
   }
 
   .logolink {
-    margin-left: -10px;
+    margin-left: 10px;
+    font-size: 20px;
   }
 
+  .list {
+    display: none; /* Hide navigation list by default on small screens */
+  }
 
+.list.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(17, 77, 148, 0.97); /* Slight transparency */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 80px; /* Push content down below navbar */
+}
+
+  .list.active ul {
+    list-style: none; 
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+  }
+
+  .list.active li {
+    padding: 0.5rem 1rem;
+    margin-top: 14px;
+  }
+
+  .list.active li:hover {
+    background-color: #f0f0f0;
+  }
+}
 
 @media (max-width: 800px) {
   .menu-icon {
