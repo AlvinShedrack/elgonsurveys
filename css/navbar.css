@@ -96,7 +96,7 @@
     cursor: pointer;
     margin-right: 240px;
     color: white;
-    font-size: 24px;
+    font-size: 10px;
   }
 
   .navbar {
@@ -130,7 +130,7 @@
   top: 0;
   right: 0;
   z-index: 9999;
-  background-color: rgba(17, 77, 148, 0.7); /* Slight transparency */
+  background-color: rgba(17, 77, 148, 0.2); /* Slight transparency */
   width: 70vw;
   height: 100vh;
   display: flex;
