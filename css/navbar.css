@@ -131,7 +131,7 @@
   z-index: 9999;
   background-color: rgba(17, 77, 148, 0.7); /* Slight transparency */
   width: 70vw;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
