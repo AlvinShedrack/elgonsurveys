@@ -152,7 +152,7 @@
   .list.active li {
     padding: 0.5rem 1rem;
     margin-top: 14px;
-    z-index: 1000000;
+    z-index: 99999999;
   }
 
   .list.active li:hover {
