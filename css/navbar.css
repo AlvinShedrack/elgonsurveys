@@ -96,90 +96,32 @@
     cursor: pointer;
     margin-right: 240px;
     color: white;
-    font-size: 6vw;
+    font-size: 5vw; /* was 6vw */
   }
 
   .navbar {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem; /* reduced padding */
     flex-direction: column;
-    font-size: 6vw;
-    
-  
+    font-size: 4.5vw; /* was 6vw */
   }
 
   .navbar img {
-    
-    width: 65px;
-    height: 45px;
+    width: 55px;  /* was 65px */
+    height: 40px; /* was 45px */
     align-items: center;
   }
 
   .logolink {
     margin-right: 10px;
-    font-size: 6vw;
+    font-size: 4.5vw; /* was 6vw */
     align-items: center;
-  }
-
-  .list {
-    display: none; /* Hide navigation list by default on small screens */
-  }
-
-.list.active {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: rgba(17, 77, 148, 0.9); /* Slight transparency */
-  width: 70vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 80px; /* Push content down below navbar */
-}
-
-  .list.active ul {
-    list-style: none; 
-    display: inline-block;
-    margin-left: 40px;
-    padding: 10px;
   }
 
   .list.active li {
-    padding: 0.5rem 1rem;
-    margin-top: 14px;
-  }
-
-  .list.active li:hover {
-    background-color: #f0f0f0;
-  }
-}
-
-@media (max-width: 800px) {
-  .menu-icon {
-    cursor: pointer;
-    font-size: 30px;
-    margin-left: 10px;
-  }
-
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar img {
-    margin: 0;
-    width: 40px;
-    height: 40px;
-  }
-
-  .logolink {
-    margin-left: 10px;
-    font-size: 22px;
+    padding: 0.3rem 0.8rem; /* was 0.5rem 1rem */
+    margin-top: 10px;       /* was 14px */
+    font-size: 4.5vw;       /* newly added for control */
   }
 }
