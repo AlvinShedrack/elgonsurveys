@@ -132,7 +132,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 99999;
+  z-index: 99999999999;
   background-color: rgba(17, 77, 148, 0.9); /* Slight transparency */
   width: 70vw;
   height: 100vh;
@@ -147,12 +147,13 @@
     display: inline-block;
     margin-left: 40px;
     padding: 10px;
+    z-index: 99999999999;
   }
 
   .list.active li {
     padding: 0.5rem 1rem;
     margin-top: 14px;
-    z-index: 99999;
+    z-index: 99999999999;
   }
 
   .list.active li:hover {
