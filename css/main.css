@@ -860,6 +860,19 @@ body {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+.about-header {
+    background-color: #5c860d;
+    color: white;
+    padding: 2px 2px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 0.5rem 1rem;
+}
+}
+
 .forgot .header h2 {
   color: #dba64b;
   font-size: 38px;
