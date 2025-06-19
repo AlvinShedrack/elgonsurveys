@@ -3,18 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+  <title>Student Support | ELGON UNITED SURVEYORS AND ENGINEERS</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Jost|Poppins" rel="stylesheet">
+  <style>
+    .gallery-header {
+      background-color: #6a0dad;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .gallery-header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .gallery-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1050;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: 10% auto;
+      display: block;
+      max-width: 80%;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navbar -->
-
-
     <nav class="navbar">
         <img rel="icon" src="assets/img/EUSE LOGO.png" type="image/png" onclick="openModal(this.src)">
         <h1 style="margin-left: 15px; font-size: 30px; color: rgb(248, 255, 146); font-weight: bold;">
@@ -53,7 +117,7 @@
              
            
     </nav>
-
+ 
     
 
     <section class="contact2-header">
@@ -66,11 +130,10 @@
         }
     </script>
 
-
 <!-- About Section -->
 <head>
     <meta charset="UTF-8">
-    <title>About Us | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+    <title>Student Support | ELGON UNITED SURVEYORS AND ENGINEERS</title>
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <style>
         body {
@@ -81,15 +144,17 @@
         .about-header {
             background-color: #5c860d;
             color: white;
-            padding: 2px 20px;
+            padding: 2px 2px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 99;
+            
         }
 
         .about-header h1 {
-            font-size: 42px;
+            font-size: 50px;
+            position: sticky;
         }
 
         .about-content {
@@ -98,11 +163,17 @@
             padding: 0 20px;
             line-height: 1.8;
             font-size: 18px;
+            color: rgb(71, 35, 35);
+            text-align: center;
+            background-color: #f1b882;
+            position: sticky;
         }
 
         .team-section {
             background-color: #f3f3f3;
             padding: 60px 20px;
+            text-align: center;
+            color: rgb(71, 35, 35);
             text-align: center;
         }
 
@@ -120,28 +191,49 @@
     </style>
 </head>
 <body>
-
+    
 <!-- HEADER -->
 <section class="about-header">
-    <h1>News</h1>
+    <h1>Student Support</h1>
 </section>
 
-<!-- ABOUT CONTENT -->
-<p>
-    News
+<section class="about-content">
+  <p>
+    <strong>Elgon United Surveyors and Engineers (EUSE)</strong> is committed to empowering the next generation of professionals in land surveying, geospatial sciences, and engineering. Our student support initiatives are designed to foster learning, hands-on experience, and career development.
+  </p>
+
+  <h3>1. Internship Opportunities</h3>
+  <p>
+    We offer structured internship programs for university and technical students. Interns work alongside experienced professionals on real-world projects, gaining practical skills and mentorship.
+  </p>
+
+  <h3>2. Academic Partnerships</h3>
+  <p>
+    EUSE partners with academic institutions to provide guest lectures, field demonstrations, and curriculum support. We believe in bridging the gap between theory and practice through collaboration.
+  </p>
+
+  <h3>3. Career Guidance & Mentorship</h3>
+  <p>
+    Our engineers and surveyors mentor students through career talks, workshops, and technical guidance. We help students understand the diverse opportunities in the surveying and engineering fields.
+  </p>
+
+  <h3>4. Research & Innovation Support</h3>
+  <p>
+    EUSE supports students conducting research in geospatial technology, engineering design, and land use planning by providing access to field data, tools, and technical expertise.
+  </p>
+
+  <h3>5. Training & Certification</h3>
+  <p>
+    Students can enroll in short courses or attend certification workshops hosted by EUSE in areas such as GIS, AutoCAD, drone surveying, and site analysis.
+  </p>
+
+  <h3>6. How to Apply</h3>
+  <p>
+    To express interest in our student support programs, please<a href="/internship.html" class="navLin">click here</a>
+  </p>    
+</section>
 
 
-
-
-
-    News
-</p>
-
-<!-- Image Modal -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img id="modalImage" src="" alt="Expanded Image">
-</div>
 
 <style>
   .modal {

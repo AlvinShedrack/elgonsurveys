@@ -3,18 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+  <title>Gallery | ELGON UNITED SURVEYORS AND ENGINEERS</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Jost|Poppins" rel="stylesheet">
+  <style>
+    .gallery-header {
+      background-color: #6a0dad;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .gallery-header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .gallery-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1050;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: 10% auto;
+      display: block;
+      max-width: 80%;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navbar -->
-
-
     <nav class="navbar">
         <img rel="icon" src="assets/img/EUSE LOGO.png" type="image/png" onclick="openModal(this.src)">
         <h1 style="margin-left: 15px; font-size: 30px; color: rgb(248, 255, 146); font-weight: bold;">
@@ -53,7 +117,7 @@
              
            
     </nav>
-
+ 
     
 
     <section class="contact2-header">
@@ -66,11 +130,10 @@
         }
     </script>
 
-
 <!-- About Section -->
 <head>
     <meta charset="UTF-8">
-    <title>About Us | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+    <title>Copyright | ELGON UNITED SURVEYORS AND ENGINEERS</title>
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <style>
         body {
@@ -81,15 +144,17 @@
         .about-header {
             background-color: #5c860d;
             color: white;
-            padding: 2px 20px;
+            padding: 2px 2px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 99;
+            
         }
 
         .about-header h1 {
-            font-size: 42px;
+            font-size: 50px;
+            position: sticky;
         }
 
         .about-content {
@@ -98,11 +163,17 @@
             padding: 0 20px;
             line-height: 1.8;
             font-size: 18px;
+            color: rgb(71, 35, 35);
+            text-align: center;
+            background-color: #f1b882;
+            position: sticky;
         }
 
         .team-section {
             background-color: #f3f3f3;
             padding: 60px 20px;
+            text-align: center;
+            color: rgb(71, 35, 35);
             text-align: center;
         }
 
@@ -120,28 +191,20 @@
     </style>
 </head>
 <body>
-
+    
 <!-- HEADER -->
 <section class="about-header">
-    <h1>News</h1>
+    <h1>Copyright</h1>
 </section>
 
-<!-- ABOUT CONTENT -->
-<p>
-    News
+<section class="about-content">
+    <p><strong>© 2025 Elgon United Surveyors and Engineers. All Rights Reserved</strong> </p>
+    <p>Unauthorized use, duplication, or distribution of any content, images, maps, or data from this website without written permission is strictly prohibited.</p>
+
+    <p><strong>Disclaimer:</strong> The content provided on this website is for informational purposes only and should not be used as a substitute for professional land surveying services.</p>
+</section>
 
 
-
-
-
-    News
-</p>
-
-<!-- Image Modal -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img id="modalImage" src="" alt="Expanded Image">
-</div>
 
 <style>
   .modal {

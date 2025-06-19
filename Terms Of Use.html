@@ -3,18 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+  <title>Terms Of Service | ELGON UNITED SURVEYORS AND ENGINEERS</title>
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Jost|Poppins" rel="stylesheet">
+  <style>
+    .gallery-header {
+      background-color: #6a0dad;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .gallery-header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .gallery-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1050;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: 10% auto;
+      display: block;
+      max-width: 80%;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navbar -->
-
-
     <nav class="navbar">
         <img rel="icon" src="assets/img/EUSE LOGO.png" type="image/png" onclick="openModal(this.src)">
         <h1 style="margin-left: 15px; font-size: 30px; color: rgb(248, 255, 146); font-weight: bold;">
@@ -53,7 +117,7 @@
              
            
     </nav>
-
+ 
     
 
     <section class="contact2-header">
@@ -66,11 +130,10 @@
         }
     </script>
 
-
 <!-- About Section -->
 <head>
     <meta charset="UTF-8">
-    <title>About Us | ELGON UNITED SURVEYORS AND ENGINEERS</title>
+    <title>Terms Of Service | ELGON UNITED SURVEYORS AND ENGINEERS</title>
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <style>
         body {
@@ -81,15 +144,17 @@
         .about-header {
             background-color: #5c860d;
             color: white;
-            padding: 2px 20px;
+            padding: 2px 2px;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 99;
+            
         }
 
         .about-header h1 {
-            font-size: 42px;
+            font-size: 50px;
+            position: sticky;
         }
 
         .about-content {
@@ -98,11 +163,17 @@
             padding: 0 20px;
             line-height: 1.8;
             font-size: 18px;
+            color: rgb(71, 35, 35);
+            text-align: center;
+            background-color: #f1b882;
+            position: sticky;
         }
 
         .team-section {
             background-color: #f3f3f3;
             padding: 60px 20px;
+            text-align: center;
+            color: rgb(71, 35, 35);
             text-align: center;
         }
 
@@ -120,28 +191,55 @@
     </style>
 </head>
 <body>
-
+    
 <!-- HEADER -->
 <section class="about-header">
-    <h1>News</h1>
+    <h1>Terms Of Service</h1>
 </section>
 
-<!-- ABOUT CONTENT -->
-<p>
-    News
+<section class="about-content">
+    <p>Welcome to the Elgon United Surveyors and Engineers (EUSE) website. By accessing or using this website, you agree to comply with and be bound by the following Terms of Use. If you do not agree with any part of these terms, please do not use our website.</p>
+
+  <h3>1. Intellectual Property</h3>
+  <p>All content, including text, graphics, logos, images, and maps, is the property of EUSE or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, modify, publish, or use this content without our written permission.</p>
+
+  <h3>2. Use of Website</h3>
+  <ul>
+    <li>You may use the site for lawful and informational purposes only.</li>
+    <li>You agree not to misuse the website or interfere with its operation.</li>
+    <li>Unauthorized access, use of data scraping tools, or creating false identities on the site is prohibited.</li>
+  </ul>
+
+  <h3>3. Disclaimer of Liability</h3>
+  <p>The information provided on this website is for general reference only. EUSE makes no warranties regarding accuracy, completeness, or suitability for any purpose. You should not rely solely on this information for professional decisions.</p>
+
+  <h3>4. Professional Services</h3>
+  <p>Your use of the website does not create any client‑professional relationship between you and EUSE. For any land surveying or engineering services, please request a formal proposal and agreement.</p>
+
+  <h3>5. External Links</h3>
+  <p>This site may contain links to third‑party websites. EUSE does not endorse and is not responsible for the content or privacy practices of those sites.</p>
+
+  <h3>6. Limitation of Liability</h3>
+  <p>To the maximum extent permitted by law, EUSE will not be liable for any direct, indirect, incidental, or consequential damages arising from your use of, or inability to use, this website.</p>
+
+  <h3>7. Indemnification</h3>
+  <p>You agree to indemnify and hold EUSE and its affiliates harmless from any claims, damages, losses, or expenses arising from your violation of these Terms of Use or your improper use of the website.</p>
+
+  <h3>8. Changes to Terms</h3>
+  <p>We may update these terms at any time. Updated terms will be posted here along with the date of revision. Your continued use of the site constitutes acceptance of the revised terms.</p>
+
+  <h3>9. Governing Law</h3>
+  <p>These Terms are governed by the laws of Uganda. Any dispute arising under these Terms will be resolved in the appropriate courts of Uganda.</p>
+
+  <h3>10. Contact Us</h3>
+  <p>If you have questions or concerns about these Terms of Use, please contact us at:<br>
+  <strong>Elgon United Surveyors and Engineers (EUSE)<br>
+  Plot 30, Malukhu Drive, Mbale, Uganda<br>
+  Email: elgonsurv@gmail.com<br>
+  Phone: +256 772-457330</strong></p>    
+</section>
 
 
-
-
-
-    News
-</p>
-
-<!-- Image Modal -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img id="modalImage" src="" alt="Expanded Image">
-</div>
 
 <style>
   .modal {
