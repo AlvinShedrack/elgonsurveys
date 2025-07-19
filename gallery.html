@@ -36,7 +36,7 @@
     .gallery-item {
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(243, 215, 215, 0.1);
       cursor: pointer;
     }
     .gallery-item img {
@@ -48,35 +48,7 @@
     .gallery-item:hover img {
       transform: scale(1.05);
     }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1050;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-    }
-    .modal-content {
-      margin: 10% auto;
-      display: block;
-      max-width: 80%;
-    }
-    .modal-content img {
-      width: 100%;
-      height: auto;
-    }
-    .close {
-      position: absolute;
-      top: 30px;
-      right: 50px;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+
   </style>
 </head>
 <body>
@@ -159,6 +131,62 @@
   </div>
 </div>
 
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+  background-color: transparent; /* Removes the reddish background */
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #fff;
+    margin: auto;
+    display: block;
+  }
+
+  .modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+ <script>
+  function openModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex";
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
 <!-- Footer -->
  <style>
     .footer {
